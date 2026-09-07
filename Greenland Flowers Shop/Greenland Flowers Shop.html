@@ -1,0 +1,714 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Greenland Flowers Shop | Addis Ababa, Ethiopia</title>
+    <link rel="icon" type="image/png" href="https://lh3.googleusercontent.com/d/1Xy_Jp7xW5g5qJbL8_Zk2p3_Y7W2_9Y2_">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            deep: '#0F2C23',      /* Deep Emerald/Forest Green */
+                            emerald: '#1B4D3E',   /* Emerald Accent */
+                            sage: '#8FAD9C',      /* Muted Green */
+                            cream: '#FDFBF7',     /* Soft Luxury Cream Background */
+                            sand: '#F4EFEB',      /* Subtle Warm Gray/Cream */
+                            pink: '#E8B4B8',      /* Soft Floral Pink Accent */
+                            rose: '#C86B7B'       /* Warm Rose Accent */
+                        }
+                    },
+                    fontFamily: {
+                        serif: ['"Cormorant Garamond"', 'serif'],
+                        sans: ['"Montserrat"', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .glass-header {
+            background: rgba(15, 44, 35, 0.95);
+            backdrop-filter: blur(12px);
+        }
+        .hero-overlay {
+            background: linear-gradient(180deg, rgba(15,44,35,0.7) 0%, rgba(15,44,35,0.85) 100%);
+        }
+    </style>
+</head>
+<body class="bg-brand-cream text-slate-800 font-sans antialiased selection:bg-brand-pink selection:text-brand-deep">
+
+    <div class="bg-brand-emerald text-brand-cream text-xs py-2 px-4 text-center font-medium tracking-wider">
+        <span class="inline-flex items-center gap-2">
+            <a href="https://maps.app.goo.gl/qcGh8HZ4zBbzpujD6" target="_blank" rel="noopener noreferrer" class="hover:text-brand-pink transition-colors flex items-center gap-1">
+                <i class="fa-solid fa-location-dot text-brand-pink"></i> XRQ8+J6, Addis Ababa, Ethiopia
+            </a> • 
+            <i class="fa-solid fa-phone text-brand-pink"></i> 
+            <a href="tel:0911280448" class="underline hover:text-brand-pink transition-colors">091 128 0448</a>
+        </span>
+    </div>
+
+    <header class="sticky top-0 z-40 glass-header text-brand-cream transition-all duration-300 border-b border-brand-emerald/30 shadow-md">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            
+            <a href="#" class="flex items-center gap-3 group">
+                <img src="img/ChatGPT Image Sep 2, 2026, 09_40_51 PM.png" alt="Greenland Flowers Shop Logo" class="h-14 w-auto object-contain bg-white rounded-full p-1 border-2 border-brand-pink/60 group-hover:scale-105 transition-transform">
+                <div class="flex flex-col">
+                    <span class="font-serif text-xl sm:text-2xl font-bold tracking-wide text-brand-cream">GREENLAND</span>
+                    <span class="text-[9px] uppercase tracking-[0.25em] text-brand-pink -mt-1 font-semibold">Flowers Shop</span>
+                </div>
+            </a>
+
+            <nav class="hidden lg:flex items-center space-x-8 text-sm font-medium tracking-wide">
+                <a href="#home" class="hover:text-brand-pink transition-colors">Home</a>
+                <a href="#featured" class="hover:text-brand-pink transition-colors">Shop Flowers</a>
+                <a href="#occasions" class="hover:text-brand-pink transition-colors">Occasions</a>
+                <a href="#about" class="hover:text-brand-pink transition-colors">About Us</a>
+                <a href="#gallery" class="hover:text-brand-pink transition-colors">Gallery</a>
+                <a href="#contact" class="hover:text-brand-pink transition-colors">Contact</a>
+            </nav>
+
+            <div class="hidden lg:block">
+                <button onclick="scrollToContact()" class="bg-brand-pink hover:bg-brand-rose text-brand-deep font-semibold px-5 py-2.5 rounded-full text-xs tracking-wider uppercase shadow-lg transition-all duration-300 hover:shadow-brand-pink/20 hover:-translate-y-0.5">
+                    CONTACT US TO ORDER
+                </button>
+            </div>
+
+            <button id="menu-btn" class="lg:hidden text-brand-cream hover:text-brand-pink p-2 focus:outline-none">
+                <i class="fa-solid fa-bars text-2xl"></i>
+            </button>
+        </div>
+
+        <div id="mobile-menu" class="hidden lg:hidden bg-brand-deep border-b border-brand-emerald/40 px-4 pt-2 pb-6 space-y-3 font-medium text-sm">
+            <a href="#home" class="block py-2 border-b border-brand-emerald/20 hover:text-brand-pink">Home</a>
+            <a href="#featured" class="block py-2 border-b border-brand-emerald/20 hover:text-brand-pink">Shop Flowers</a>
+            <a href="#occasions" class="block py-2 border-b border-brand-emerald/20 hover:text-brand-pink">Occasions</a>
+            <a href="#about" class="block py-2 border-b border-brand-emerald/20 hover:text-brand-pink">About Us</a>
+            <a href="#gallery" class="block py-2 border-b border-brand-emerald/20 hover:text-brand-pink">Gallery</a>
+            <a href="#contact" class="block py-2 hover:text-brand-pink">Contact</a>
+            <button onclick="scrollToContact()" class="w-full mt-2 bg-brand-pink text-brand-deep font-semibold py-3 rounded-xl text-xs uppercase tracking-wider shadow">
+                CONTACT US TO ORDER
+            </button>
+        </div>
+    </header>
+
+    <section id="home" class="relative min-h-[88vh] flex items-center justify-center text-center px-4 overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <img src="https://img.magnific.com/free-photo/flowers-floral-shop-different-types_1303-15615.jpg?semt=ais_hybrid&w=740&q=80" alt="Greenland Flowers Shop Hero Bouquet" class="w-full h-full object-cover">
+            <div class="absolute inset-0 hero-overlay"></div>
+        </div>
+
+        <div class="relative z-10 max-w-4xl mx-auto text-brand-cream space-y-6 py-16">
+            <span class="inline-block uppercase tracking-[0.3em] text-brand-pink text-xs font-semibold bg-brand-deep/60 backdrop-blur-md px-4 py-1.5 rounded-full border border-brand-pink/30">
+                Addis Ababa's Premier Floral Boutique
+            </span>
+            <h1 class="font-serif text-4xl sm:text-6xl md:text-7xl font-bold leading-tight tracking-wide drop-shadow-md">
+                FLOWERS THAT SPEAK FROM THE HEART
+            </h1>
+            <p class="text-lg sm:text-xl text-slate-200 max-w-2xl mx-auto font-light leading-relaxed">
+                Beautiful flowers for every special moment.
+            </p>
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-4 pt-6">
+                <a href="#featured" class="w-full sm:w-auto bg-brand-cream text-brand-deep hover:bg-white font-semibold px-8 py-3.5 rounded-full text-xs tracking-widest uppercase transition-all shadow-lg hover:shadow-xl hover:-translate-y-0.5">
+                    SHOP FLOWERS
+                </a>
+                <button onclick="scrollToContact()" class="w-full sm:w-auto bg-brand-pink hover:bg-brand-rose text-brand-deep font-semibold px-8 py-3.5 rounded-full text-xs tracking-widest uppercase transition-all shadow-lg hover:shadow-brand-pink/30 hover:-translate-y-0.5">
+                    CONTACT US TO ORDER
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <section id="featured" class="py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+        <div class="text-center max-w-2xl mx-auto mb-16 space-y-3">
+            <span class="text-brand-rose uppercase text-xs tracking-widest font-semibold">Hand-Picked Selection</span>
+            <h2 class="font-serif text-3xl sm:text-4xl font-bold text-brand-deep">FEATURED FLOWERS</h2>
+            <div class="w-16 h-0.5 bg-brand-pink mx-auto"></div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 border border-brand-sand/60 group flex flex-col justify-between">
+                <div>
+                    <div class="relative overflow-hidden aspect-[4/3]">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJXyhPBlY0z46FqqU9MJoDS8pLd6lY60rtGqKcufNImQ&s" alt="Roses" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        <span class="absolute top-3 right-3 bg-brand-deep/80 backdrop-blur-sm text-brand-cream text-[10px] uppercase font-semibold px-3 py-1 rounded-full">Classic</span>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-serif text-2xl font-bold text-brand-deep mb-2">Roses</h3>
+                        <p class="text-slate-600 text-sm leading-relaxed">Velvety fresh roses picked at peak bloom, crafted to convey timeless love and deep appreciation.</p>
+                    </div>
+                </div>
+                <div class="p-6 pt-0">
+                    <button onclick="scrollToContact()" class="w-full border-2 border-brand-emerald text-brand-emerald hover:bg-brand-emerald hover:text-white font-semibold py-2.5 rounded-xl text-xs uppercase tracking-wider transition-colors">
+                        CONTACT US TO ORDER
+                    </button>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 border border-brand-sand/60 group flex flex-col justify-between">
+                <div>
+                    <div class="relative overflow-hidden aspect-[4/3]">
+                        <img src="img/Romantic Bouquets.png" alt="Romantic Bouquets" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        <span class="absolute top-3 right-3 bg-brand-deep/80 backdrop-blur-sm text-brand-cream text-[10px] uppercase font-semibold px-3 py-1 rounded-full">Popular</span>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-serif text-2xl font-bold text-brand-deep mb-2">Romantic Bouquets</h3>
+                        <p class="text-slate-600 text-sm leading-relaxed">Soft palettes and fragrant stems harmoniously combined to create unforgettable romantic gestures.</p>
+                    </div>
+                </div>
+                <div class="p-6 pt-0">
+                    <button onclick="scrollToContact()" class="w-full border-2 border-brand-emerald text-brand-emerald hover:bg-brand-emerald hover:text-white font-semibold py-2.5 rounded-xl text-xs uppercase tracking-wider transition-colors">
+                        CONTACT US TO ORDER
+                    </button>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 border border-brand-sand/60 group flex flex-col justify-between">
+                <div>
+                    <div class="relative overflow-hidden aspect-[4/3]">
+                        <img src="img/dan.jfif" alt="Birthday Flowers" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-serif text-2xl font-bold text-brand-deep mb-2">Birthday Flowers</h3>
+                        <p class="text-slate-600 text-sm leading-relaxed">Bright, cheerful arrangements designed to bring joy and celebration to someone's special day.</p>
+                    </div>
+                </div>
+                <div class="p-6 pt-0">
+                    <button onclick="scrollToContact()" class="w-full border-2 border-brand-emerald text-brand-emerald hover:bg-brand-emerald hover:text-white font-semibold py-2.5 rounded-xl text-xs uppercase tracking-wider transition-colors">
+                        CONTACT US TO ORDER
+                    </button>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 border border-brand-sand/60 group flex flex-col justify-between">
+                <div>
+                    <div class="relative overflow-hidden aspect-[4/3]">
+                        <img src="img/wid.png" alt="Wedding Flowers" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        <span class="absolute top-3 right-3 bg-brand-deep/80 backdrop-blur-sm text-brand-cream text-[10px] uppercase font-semibold px-3 py-1 rounded-full">Elegance</span>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-serif text-2xl font-bold text-brand-deep mb-2">Wedding Flowers</h3>
+                        <p class="text-slate-600 text-sm leading-relaxed">Exquisite bridal bouquets and ceremonial arrangements tailored for your unforgettable milestone.</p>
+                    </div>
+                </div>
+                <div class="p-6 pt-0">
+                    <button onclick="scrollToContact()" class="w-full border-2 border-brand-emerald text-brand-emerald hover:bg-brand-emerald hover:text-white font-semibold py-2.5 rounded-xl text-xs uppercase tracking-wider transition-colors">
+                        CONTACT US TO ORDER
+                    </button>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 border border-brand-sand/60 group flex flex-col justify-between lg:col-span-1 md:col-span-2 lg:col-span-1">
+                <div>
+                    <div class="relative overflow-hidden aspect-[4/3]">
+                        <img src="img/sppp.png" alt="Special Occasion Flowers" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-serif text-2xl font-bold text-brand-deep mb-2">Special Occasion Flowers</h3>
+                        <p class="text-slate-600 text-sm leading-relaxed">Bespoke arrangements carefully curated to elevate anniversaries, honors, and gatherings.</p>
+                    </div>
+                </div>
+                <div class="p-6 pt-0">
+                    <button onclick="scrollToContact()" class="w-full border-2 border-brand-emerald text-brand-emerald hover:bg-brand-emerald hover:text-white font-semibold py-2.5 rounded-xl text-xs uppercase tracking-wider transition-colors">
+                        CONTACT US TO ORDER
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-brand-sand/50 py-20 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center max-w-2xl mx-auto mb-16 space-y-3">
+                <span class="text-brand-rose uppercase text-xs tracking-widest font-semibold">Explore By Style</span>
+                <h2 class="font-serif text-3xl sm:text-4xl font-bold text-brand-deep">FLOWER CATEGORIES</h2>
+                <div class="w-16 h-0.5 bg-brand-pink mx-auto"></div>
+            </div>
+
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4 sm:gap-6">
+                <div class="bg-white p-6 rounded-2xl text-center shadow-sm hover:shadow-md transition-all group border border-brand-sand">
+                    <div class="w-12 h-12 rounded-full bg-brand-sand flex items-center justify-center mx-auto mb-3 text-brand-emerald group-hover:bg-brand-emerald group-hover:text-white transition-colors">
+                        <i class="fa-solid fa-spa text-xl"></i>
+                    </div>
+                    <h4 class="font-serif font-bold text-brand-deep text-lg">Roses</h4>
+                    <a href="#gallery" class="inline-block mt-3 text-[11px] font-semibold tracking-wider text-brand-rose uppercase border-b border-brand-rose">VIEW COLLECTION</a>
+                </div>
+                <div class="bg-white p-6 rounded-2xl text-center shadow-sm hover:shadow-md transition-all group border border-brand-sand">
+                    <div class="w-12 h-12 rounded-full bg-brand-sand flex items-center justify-center mx-auto mb-3 text-brand-emerald group-hover:bg-brand-emerald group-hover:text-white transition-colors">
+                        <i class="fa-solid fa-fan text-xl"></i>
+                    </div>
+                    <h4 class="font-serif font-bold text-brand-deep text-lg">Bouquets</h4>
+                    <a href="#gallery" class="inline-block mt-3 text-[11px] font-semibold tracking-wider text-brand-rose uppercase border-b border-brand-rose">VIEW COLLECTION</a>
+                </div>
+                <div class="bg-white p-6 rounded-2xl text-center shadow-sm hover:shadow-md transition-all group border border-brand-sand">
+                    <div class="w-12 h-12 rounded-full bg-brand-sand flex items-center justify-center mx-auto mb-3 text-brand-emerald group-hover:bg-brand-emerald group-hover:text-white transition-colors">
+                        <i class="fa-solid fa-cake-candles text-xl"></i>
+                    </div>
+                    <h4 class="font-serif font-bold text-brand-deep text-lg">Birthday</h4>
+                    <a href="#gallery" class="inline-block mt-3 text-[11px] font-semibold tracking-wider text-brand-rose uppercase border-b border-brand-rose">VIEW COLLECTION</a>
+                </div>
+                <div class="bg-white p-6 rounded-2xl text-center shadow-sm hover:shadow-md transition-all group border border-brand-sand">
+                    <div class="w-12 h-12 rounded-full bg-brand-sand flex items-center justify-center mx-auto mb-3 text-brand-emerald group-hover:bg-brand-emerald group-hover:text-white transition-colors">
+                        <i class="fa-solid fa-rings-wedding text-xl"></i>
+                    </div>
+                    <h4 class="font-serif font-bold text-brand-deep text-lg">Wedding</h4>
+                    <a href="#gallery" class="inline-block mt-3 text-[11px] font-semibold tracking-wider text-brand-rose uppercase border-b border-brand-rose">VIEW COLLECTION</a>
+                </div>
+                <div class="bg-white p-6 rounded-2xl text-center shadow-sm hover:shadow-md transition-all group border border-brand-sand">
+                    <div class="w-12 h-12 rounded-full bg-brand-sand flex items-center justify-center mx-auto mb-3 text-brand-emerald group-hover:bg-brand-emerald group-hover:text-white transition-colors">
+                        <i class="fa-solid fa-heart text-xl"></i>
+                    </div>
+                    <h4 class="font-serif font-bold text-brand-deep text-lg">Romantic</h4>
+                    <a href="#gallery" class="inline-block mt-3 text-[11px] font-semibold tracking-wider text-brand-rose uppercase border-b border-brand-rose">VIEW COLLECTION</a>
+                </div>
+                <div class="bg-white p-6 rounded-2xl text-center shadow-sm hover:shadow-md transition-all group border border-brand-sand">
+                    <div class="w-12 h-12 rounded-full bg-brand-sand flex items-center justify-center mx-auto mb-3 text-brand-emerald group-hover:bg-brand-emerald group-hover:text-white transition-colors">
+                        <i class="fa-solid fa-gift text-xl"></i>
+                    </div>
+                    <h4 class="font-serif font-bold text-brand-deep text-lg">Gift Flowers</h4>
+                    <a href="#gallery" class="inline-block mt-3 text-[11px] font-semibold tracking-wider text-brand-rose uppercase border-b border-brand-rose">VIEW COLLECTION</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="occasions" class="py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+        <div class="text-center max-w-2xl mx-auto mb-16 space-y-3">
+            <span class="text-brand-rose uppercase text-xs tracking-widest font-semibold">Celebrate Moments</span>
+            <h2 class="font-serif text-3xl sm:text-4xl font-bold text-brand-deep">FLOWERS FOR EVERY OCCASION</h2>
+            <div class="w-16 h-0.5 bg-brand-pink mx-auto"></div>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div class="bg-brand-deep text-brand-cream rounded-2xl p-6 flex flex-col justify-between hover:-translate-y-1 transition-transform">
+                <div>
+                    <i class="fa-solid fa-cake-candles text-3xl text-brand-pink mb-4"></i>
+                    <h3 class="font-serif text-2xl font-bold mb-2">Birthday</h3>
+                    <p class="text-slate-300 text-xs leading-relaxed mb-6">Vibrant floral bursts engineered to send warm wishes on birthdays.</p>
+                </div>
+                <button onclick="scrollToContact()" class="text-left text-xs uppercase font-semibold text-brand-pink tracking-wider hover:underline">CONTACT US TO ORDER →</button>
+            </div>
+
+            <div class="bg-brand-deep text-brand-cream rounded-2xl p-6 flex flex-col justify-between hover:-translate-y-1 transition-transform">
+                <div>
+                    <i class="fa-solid fa-church text-3xl text-brand-pink mb-4"></i>
+                    <h3 class="font-serif text-2xl font-bold mb-2">Wedding</h3>
+                    <p class="text-slate-300 text-xs leading-relaxed mb-6">Bridal posies, centerpieces, and aisle stems crafted to perfection.</p>
+                </div>
+                <button onclick="scrollToContact()" class="text-left text-xs uppercase font-semibold text-brand-pink tracking-wider hover:underline">CONTACT US TO ORDER →</button>
+            </div>
+
+            <div class="bg-brand-deep text-brand-cream rounded-2xl p-6 flex flex-col justify-between hover:-translate-y-1 transition-transform">
+                <div>
+                    <i class="fa-solid fa-glass-cheers text-3xl text-brand-pink mb-4"></i>
+                    <h3 class="font-serif text-2xl font-bold mb-2">Anniversary</h3>
+                    <p class="text-slate-300 text-xs leading-relaxed mb-6">Express enduring affection with classic stem arrangements.</p>
+                </div>
+                <button onclick="scrollToContact()" class="text-left text-xs uppercase font-semibold text-brand-pink tracking-wider hover:underline">CONTACT US TO ORDER →</button>
+            </div>
+
+            <div class="bg-brand-deep text-brand-cream rounded-2xl p-6 flex flex-col justify-between hover:-translate-y-1 transition-transform">
+                <div>
+                    <i class="fa-solid fa-heart text-3xl text-brand-pink mb-4"></i>
+                    <h3 class="font-serif text-2xl font-bold mb-2">Valentine's Day</h3>
+                    <p class="text-slate-300 text-xs leading-relaxed mb-6">Express deep romance with our finest red rose collections.</p>
+                </div>
+                <button onclick="scrollToContact()" class="text-left text-xs uppercase font-semibold text-brand-pink tracking-wider hover:underline">CONTACT US TO ORDER →</button>
+            </div>
+
+            <div class="bg-brand-deep text-brand-cream rounded-2xl p-6 flex flex-col justify-between hover:-translate-y-1 transition-transform">
+                <div>
+                    <i class="fa-solid fa-award text-3xl text-brand-pink mb-4"></i>
+                    <h3 class="font-serif text-2xl font-bold mb-2">Congratulations</h3>
+                    <p class="text-slate-300 text-xs leading-relaxed mb-6">Celebrate milestones, promotions, and achievements in style.</p>
+                </div>
+                <button onclick="scrollToContact()" class="text-left text-xs uppercase font-semibold text-brand-pink tracking-wider hover:underline">CONTACT US TO ORDER →</button>
+            </div>
+
+            <div class="bg-brand-deep text-brand-cream rounded-2xl p-6 flex flex-col justify-between hover:-translate-y-1 transition-transform">
+                <div>
+                    <i class="fa-solid fa-sun text-3xl text-brand-pink mb-4"></i>
+                    <h3 class="font-serif text-2xl font-bold mb-2">Get Well Soon</h3>
+                    <p class="text-slate-300 text-xs leading-relaxed mb-6">Brighten hospital rooms and homes with gentle, cheerful blooms.</p>
+                </div>
+                <button onclick="scrollToContact()" class="text-left text-xs uppercase font-semibold text-brand-pink tracking-wider hover:underline">CONTACT US TO ORDER →</button>
+            </div>
+
+            <div class="bg-brand-deep text-brand-cream rounded-2xl p-6 flex flex-col justify-between hover:-translate-y-1 transition-transform sm:col-span-2 lg:col-span-2">
+                <div>
+                    <i class="fa-solid fa-star text-3xl text-brand-pink mb-4"></i>
+                    <h3 class="font-serif text-2xl font-bold mb-2">Special Events</h3>
+                    <p class="text-slate-300 text-xs leading-relaxed mb-6">Customized floral styling for corporate galas, private dinners, and landmark celebrations in Addis Ababa.</p>
+                </div>
+                <button onclick="scrollToContact()" class="text-left text-xs uppercase font-semibold text-brand-pink tracking-wider hover:underline">CONTACT US TO ORDER →</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-brand-sand/40 py-20 px-4 sm:px-6 lg:px-8 border-y border-brand-sand">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center max-w-2xl mx-auto mb-16 space-y-3">
+                <span class="text-brand-rose uppercase text-xs tracking-widest font-semibold">Our Value</span>
+                <h2 class="font-serif text-3xl sm:text-4xl font-bold text-brand-deep">WHY CHOOSE GREENLAND FLOWERS?</h2>
+                <div class="w-16 h-0.5 bg-brand-pink mx-auto"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="bg-white p-8 rounded-2xl shadow-sm text-center border border-brand-sand">
+                    <div class="w-14 h-14 bg-brand-sand rounded-full flex items-center justify-center mx-auto mb-6 text-brand-emerald">
+                        <i class="fa-solid fa-seedling text-2xl"></i>
+                    </div>
+                    <h3 class="font-serif text-xl font-bold text-brand-deep mb-3">Fresh Flowers</h3>
+                    <p class="text-slate-600 text-xs leading-relaxed">Sourced directly to ensure long-lasting freshness and vibrant aesthetic appeal in every bouquet.</p>
+                </div>
+
+                <div class="bg-white p-8 rounded-2xl shadow-sm text-center border border-brand-sand">
+                    <div class="w-14 h-14 bg-brand-sand rounded-full flex items-center justify-center mx-auto mb-6 text-brand-emerald">
+                        <i class="fa-solid fa-wand-magic-sparkles text-2xl"></i>
+                    </div>
+                    <h3 class="font-serif text-xl font-bold text-brand-deep mb-3">Beautiful Arrangements</h3>
+                    <p class="text-slate-600 text-xs leading-relaxed">Thoughtfully balanced floral designs handcrafted by experienced florists with eye for detail.</p>
+                </div>
+
+                <div class="bg-white p-8 rounded-2xl shadow-sm text-center border border-brand-sand">
+                    <div class="w-14 h-14 bg-brand-sand rounded-full flex items-center justify-center mx-auto mb-6 text-brand-emerald">
+                        <i class="fa-solid fa-wallet text-2xl"></i>
+                    </div>
+                    <h3 class="font-serif text-xl font-bold text-brand-deep mb-3">Flexible Payment Options</h3>
+                    <p class="text-slate-600 text-xs leading-relaxed">Convenient order placement and payment methods suited to your personal convenience.</p>
+                </div>
+
+                <div class="bg-white p-8 rounded-2xl shadow-sm text-center border border-brand-sand">
+                    <div class="w-14 h-14 bg-brand-sand rounded-full flex items-center justify-center mx-auto mb-6 text-brand-emerald">
+                        <i class="fa-solid fa-hand-holding-heart text-2xl"></i>
+                    </div>
+                    <h3 class="font-serif text-xl font-bold text-brand-deep mb-3">Customer-Focused Service</h3>
+                    <p class="text-slate-600 text-xs leading-relaxed">Attentive assistance helping you pick or design arrangements for any specific moment.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div class="relative">
+                <div class="rounded-2xl overflow-hidden shadow-2xl aspect-[4/3]">
+                    <img src="img/new.png" alt="About Greenland Flowers Shop" class="w-full h-full object-cover">
+                </div>
+                <div class="absolute -bottom-6 -right-6 bg-brand-deep text-brand-cream p-6 rounded-2xl hidden sm:block max-w-xs shadow-xl border border-brand-emerald/40">
+                    <p class="font-serif text-lg font-semibold text-brand-pink mb-1">Located in Addis Ababa</p>
+                    <p class="text-xs text-slate-300">Dedicated to crafting authentic floral moments across Ethiopia.</p>
+                </div>
+            </div>
+
+            <div class="space-y-6">
+                <span class="text-brand-rose uppercase text-xs tracking-widest font-semibold">Our Story</span>
+                <h2 class="font-serif text-3xl sm:text-5xl font-bold text-brand-deep leading-tight">
+                    ABOUT GREENLAND FLOWERS SHOP
+                </h2>
+                <div class="w-16 h-0.5 bg-brand-pink"></div>
+                <p class="text-slate-700 text-base leading-relaxed">
+                    Greenland Flowers Shop is a flower shop in Addis Ababa offering flowers and arrangements for special occasions. We aim to help customers find beautiful flowers for meaningful moments.
+                </p>
+                <div class="pt-4 flex flex-col sm:flex-row gap-4">
+                    <a href="https://maps.app.goo.gl/qcGh8HZ4zBbzpujD6" target="_blank" rel="noopener noreferrer" class="flex items-center gap-3 group">
+                        <div class="w-10 h-10 rounded-full bg-brand-sand flex items-center justify-center text-brand-emerald group-hover:bg-brand-emerald group-hover:text-white transition-colors">
+                            <i class="fa-solid fa-location-dot"></i>
+                        </div>
+                        <div>
+                            <p class="text-xs font-bold text-brand-deep uppercase">Address (Click to view map)</p>
+                            <p class="text-xs text-slate-600 group-hover:text-brand-emerald transition-colors underline">XRQ8+J6, Addis Ababa, Ethiopia</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="gallery" class="py-20 px-4 sm:px-6 lg:px-8 bg-white border-t border-brand-sand">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center max-w-2xl mx-auto mb-12 space-y-3">
+                <span class="text-brand-rose uppercase text-xs tracking-widest font-semibold">Visual Portfolio</span>
+                <h2 class="font-serif text-3xl sm:text-4xl font-bold text-brand-deep">OUR FLOWER GALLERY</h2>
+                <div class="w-16 h-0.5 bg-brand-pink mx-auto"></div>
+            </div>
+
+            <div class="flex flex-wrap justify-center gap-2 mb-10 text-xs font-semibold uppercase tracking-wider">
+                <button onclick="filterGallery('all')" class="gallery-filter-btn active bg-brand-deep text-white px-5 py-2 rounded-full transition-all" data-filter="all">All</button>
+                <button onclick="filterGallery('roses')" class="gallery-filter-btn bg-brand-sand text-brand-deep hover:bg-brand-deep hover:text-white px-5 py-2 rounded-full transition-all" data-filter="roses">Roses</button>
+                <button onclick="filterGallery('bouquets')" class="gallery-filter-btn bg-brand-sand text-brand-deep hover:bg-brand-deep hover:text-white px-5 py-2 rounded-full transition-all" data-filter="bouquets">Bouquets</button>
+                <button onclick="filterGallery('events')" class="gallery-filter-btn bg-brand-sand text-brand-deep hover:bg-brand-deep hover:text-white px-5 py-2 rounded-full transition-all" data-filter="events">Events</button>
+                <button onclick="filterGallery('wedding')" class="gallery-filter-btn bg-brand-sand text-brand-deep hover:bg-brand-deep hover:text-white px-5 py-2 rounded-full transition-all" data-filter="wedding">Wedding Flowers</button>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
+                <div class="gallery-item bouquets events relative aspect-square rounded-xl overflow-hidden shadow-sm group cursor-pointer" onclick="openLightbox(0)">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXQB1HXmxlIk-ulXIIHnotk_vAkF9PNe3L9c94Eu8LBA&s" alt="Fresh Flower Arrangement" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-brand-deep/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center text-white text-sm font-serif">Fresh Flower Arrangement</div>
+                </div>
+
+                <div class="gallery-item roses relative aspect-square rounded-xl overflow-hidden shadow-sm group cursor-pointer" onclick="openLightbox(1)">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBle56z-9726gEM1SxIsQfYvQrDHT4ded7TX9CjNrYww&s=10" alt="Red Rose Bouquet" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-brand-deep/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center text-white text-sm font-serif">Red Rose Bouquet</div>
+                </div>
+
+                <div class="gallery-item roses bouquets relative aspect-square rounded-xl overflow-hidden shadow-sm group cursor-pointer" onclick="openLightbox(2)">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQViUijxfnXn6uzF4mSlPzfPFlt6AXP2Fd7ZQVArzqXcQ&s=10" alt="Pink Rose Bouquet" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-brand-deep/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center text-white text-sm font-serif">Pink Rose Bouquet</div>
+                </div>
+
+                <div class="gallery-item roses wedding relative aspect-square rounded-xl overflow-hidden shadow-sm group cursor-pointer" onclick="openLightbox(3)">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFxJ5FhsyuetrGAzwGXwqDeXZbAe7W9D-CMEiIBFgvuA&s=10" alt="White Rose Bouquet" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-brand-deep/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center text-white text-sm font-serif">White Rose Bouquet</div>
+                </div>
+
+                <div class="gallery-item bouquets relative aspect-square rounded-xl overflow-hidden shadow-sm group cursor-pointer" onclick="openLightbox(4)">
+                    <img src="img/sppp.png" alt="Purple Flower Bouquet" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-brand-deep/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center text-white text-sm font-serif">Purple Flower Bouquet</div>
+                </div>
+
+                <div class="gallery-item bouquets events relative aspect-square rounded-xl overflow-hidden shadow-sm group cursor-pointer" onclick="openLightbox(5)">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnsDGpKTL5mbkz7gmo6riV-_JovxhA8j7heTyrtm3wDQ&s" alt="Yellow Flower Bouquet" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-brand-deep/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center text-white text-sm font-serif">Yellow Flower Bouquet</div>
+                </div>
+
+                <div class="gallery-item bouquets relative aspect-square rounded-xl overflow-hidden shadow-sm group cursor-pointer" onclick="openLightbox(6)">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSP6d6qqK3tv2WGYbPes2Z3MaBE_NWv0ObWXTiitGqNaQ&s=10" alt="Mixed Flower Bouquet" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-brand-deep/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center text-white text-sm font-serif">Mixed Flower Bouquet</div>
+                </div>
+
+                <div class="gallery-item bouquets events relative aspect-square rounded-xl overflow-hidden shadow-sm group cursor-pointer" onclick="openLightbox(7)">
+                    <img src="img/Romantic Bouquets.png" alt="Luxury Bouquet" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-brand-deep/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center text-white text-sm font-serif">Luxury Bouquet</div>
+                </div>
+
+                <div class="gallery-item roses bouquets relative aspect-square rounded-xl overflow-hidden shadow-sm group cursor-pointer" onclick="openLightbox(8)">
+                    <img src="img/rd.png" alt="Romantic Flowers" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-brand-deep/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center text-white text-sm font-serif">Romantic Flowers</div>
+                </div>
+
+                <div class="gallery-item events bouquets relative aspect-square rounded-xl overflow-hidden shadow-sm group cursor-pointer" onclick="openLightbox(9)">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSX8cCDccS4zi8RnGnat_fb4tWmxcb8a9676Yc4TOS0XA&s=10" alt="Birthday Flowers" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-brand-deep/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center text-white text-sm font-serif">Birthday Flowers</div>
+                </div>
+
+                <div class="gallery-item wedding relative aspect-square rounded-xl overflow-hidden shadow-sm group cursor-pointer" onclick="openLightbox(10)">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQL2BPyNpBdK-eQI2fMHeOiGcz1rZnarpuWDMecAiiWuw&s=10" alt="Wedding Flowers" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-brand-deep/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center text-white text-sm font-serif">Wedding Flowers</div>
+                </div>
+
+                <div class="gallery-item roses events relative aspect-square rounded-xl overflow-hidden shadow-sm group cursor-pointer" onclick="openLightbox(11)">
+                    <img src="img/anvs.jfif" alt="Anniversary Flowers" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-brand-deep/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center text-white text-sm font-serif">Anniversary Flowers</div>
+                </div>
+
+                <div class="gallery-item bouquets relative aspect-square rounded-xl overflow-hidden shadow-sm group cursor-pointer" onclick="openLightbox(12)">
+                    <img src="img/gv.png" alt="Gift Flowers" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-brand-deep/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center text-white text-sm font-serif">Gift Flowers</div>
+                </div>
+
+                <div class="gallery-item bouquets events relative aspect-square rounded-xl overflow-hidden shadow-sm group cursor-pointer border-2 border-brand-pink/50" onclick="openLightbox(13)">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdMG-ycWSB1L-7lxhzetv4FstQ3-pgwwLArnCN9baV7g&s=10" alt="Authentic Greenland Flowers Arrangement 1" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-brand-deep/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center text-white text-xs text-center font-serif px-2">Authentic Greenland Bouquet 1</div>
+                </div>
+
+                <div class="gallery-item bouquets wedding relative aspect-square rounded-xl overflow-hidden shadow-sm group cursor-pointer border-2 border-brand-pink/50" onclick="openLightbox(14)">
+                    <img src="img/Romantic Bouquets.png" alt="Authentic Greenland Flowers Arrangement 2" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-brand-deep/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center text-white text-xs text-center font-serif px-2">Authentic Greenland Bouquet 2</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-16 px-4 bg-brand-sand/30 border-t border-brand-sand">
+        <div class="max-w-4xl mx-auto text-center space-y-4">
+            <h2 class="font-serif text-3xl font-bold text-brand-deep">CUSTOMER FEEDBACK</h2>
+            <div class="w-12 h-0.5 bg-brand-pink mx-auto"></div>
+            <p class="text-slate-600 text-sm leading-relaxed max-w-xl mx-auto">
+                We value customer feedback and continuously work to improve our products and service.
+            </p>
+        </div>
+    </section>
+
+    <section id="contact" class="py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+            
+            <div class="lg:col-span-5 bg-brand-deep text-brand-cream p-8 sm:p-10 rounded-3xl flex flex-col justify-between shadow-xl">
+                <div class="space-y-6">
+                    <div>
+                        <span class="text-brand-pink text-xs font-semibold uppercase tracking-widest">Get In Touch</span>
+                        <h2 class="font-serif text-3xl sm:text-4xl font-bold mt-1">CONTACT US TO ORDER</h2>
+                        <div class="w-12 h-0.5 bg-brand-pink mt-3"></div>
+                    </div>
+                    
+                    <p class="text-slate-300 text-sm leading-relaxed">
+                        Contact Greenland Flowers Shop to discuss your flower needs and place your request.
+                    </p>
+
+                    <div class="space-y-4 pt-4 text-sm">
+                        <div class="flex items-start gap-4">
+                            <div class="w-10 h-10 rounded-full bg-brand-emerald flex items-center justify-center text-brand-pink shrink-0 mt-1">
+                                <i class="fa-solid fa-phone"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs text-slate-400 uppercase font-semibold">Phone</p>
+                                <a href="tel:0911280448" class="text-lg font-bold text-white hover:text-brand-pink transition-colors">091 128 0448</a>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-4">
+                            <div class="w-10 h-10 rounded-full bg-brand-emerald flex items-center justify-center text-brand-pink shrink-0 mt-1">
+                                <i class="fa-solid fa-location-dot"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs text-slate-400 uppercase font-semibold">Location</p>
+                                <a href="https://maps.app.goo.gl/qcGh8HZ4zBbzpujD6" target="_blank" rel="noopener noreferrer" class="text-white font-medium hover:text-brand-pink underline transition-colors">XRQ8+J6, Addis Ababa, Ethiopia</a>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-4">
+                            <div class="w-10 h-10 rounded-full bg-brand-emerald flex items-center justify-center text-brand-pink shrink-0 mt-1">
+                                <i class="fa-brands fa-instagram"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs text-slate-400 uppercase font-semibold">Official Instagram</p>
+                                <a href="https://www.instagram.com/greenland_flowers" target="_blank" rel="noopener noreferrer" class="text-white hover:text-brand-pink underline transition-colors">@greenland_flowers</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pt-8 mt-8 border-t border-brand-emerald/40">
+                    <a href="tel:0911280448" class="w-full bg-brand-pink hover:bg-brand-rose text-brand-deep font-bold py-3.5 rounded-xl text-center block text-xs tracking-widest uppercase shadow-lg transition-all">
+                        CALL US NOW
+                    </a>
+                </div>
+            </div>
+
+            <div class="lg:col-span-7 bg-white p-8 sm:p-10 rounded-3xl shadow-sm border border-brand-sand">
+                <form id="order-form" onsubmit="handleFormSubmit(event)" class="space-y-4">
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                        <div>
+                            <label class="block text-xs font-semibold uppercase tracking-wider text-slate-700 mb-1">Name *</label>
+                            <input type="text" required class="w-full bg-brand-cream/50 border border-slate-200 rounded-xl px-4 py-2.5 text-sm focus:outline-none focus:border-brand-emerald">
+                        </div>
+                        <div>
+                            <label class="block text-xs font-semibold uppercase tracking-wider text-slate-700 mb-1">Phone Number *</label>
+                            <input type="tel" required class="w-full bg-brand-cream/50 border border-slate-200 rounded-xl px-4 py-2.5 text-sm focus:outline-none focus:border-brand-emerald">
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                        <div>
+                            <label class="block text-xs font-semibold uppercase tracking-wider text-slate-700 mb-1">Flower Type</label>
+                            <select class="w-full bg-brand-cream/50 border border-slate-200 rounded-xl px-4 py-2.5 text-sm focus:outline-none focus:border-brand-emerald text-slate-700">
+                                <option>Roses</option>
+                                <option>Bouquets</option>
+                                <option>Mixed Flowers</option>
+                                <option>Custom Design</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="block text-xs font-semibold uppercase tracking-wider text-slate-700 mb-1">Occasion</label>
+                            <select class="w-full bg-brand-cream/50 border border-slate-200 rounded-xl px-4 py-2.5 text-sm focus:outline-none focus:border-brand-emerald text-slate-700">
+                                <option>Birthday</option>
+                                <option>Wedding</option>
+                                <option>Anniversary</option>
+                                <option>Valentine's Day</option>
+                                <option>Congratulations</option>
+                                <option>Get Well Soon</option>
+                                <option>Other Special Event</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div>
+                        <label class="block text-xs font-semibold uppercase tracking-wider text-slate-700 mb-1">Preferred Colors</label>
+                        <input type="text" placeholder="e.g. Red, White, Pastel Pink" class="w-full bg-brand-cream/50 border border-slate-200 rounded-xl px-4 py-2.5 text-sm focus:outline-none focus:border-brand-emerald">
+                    </div>
+
+                    <div>
+                        <label class="block text-xs font-semibold uppercase tracking-wider text-slate-700 mb-1">Message on Card</label>
+                        <textarea rows="2" placeholder="Write your personalized greeting card message..." class="w-full bg-brand-cream/50 border border-slate-200 rounded-xl px-4 py-2.5 text-sm focus:outline-none focus:border-brand-emerald"></textarea>
+                    </div>
+
+                    <div>
+                        <label class="block text-xs font-semibold uppercase tracking-wider text-slate-700 mb-1">Special Requests</label>
+                        <textarea rows="2" placeholder="Any delivery instructions or specific styling preferences..." class="w-full bg-brand-cream/50 border border-slate-200 rounded-xl px-4 py-2.5 text-sm focus:outline-none focus:border-brand-emerald"></textarea>
+                    </div>
+
+                    <button type="submit" class="w-full bg-brand-emerald hover:bg-brand-deep text-white font-bold py-3.5 rounded-xl text-xs uppercase tracking-widest transition-colors shadow-md">
+                        CONTACT US TO ORDER
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-brand-deep text-brand-cream py-16 px-4">
+        <div class="max-w-3xl mx-auto text-center space-y-4">
+            <h2 class="font-serif text-3xl font-bold">STAY IN BLOOM</h2>
+            <p class="text-slate-300 text-sm max-w-md mx-auto">Subscribe to receive updates about new flowers and special occasions.</p>
+            <form onsubmit="handleNewsletter(event)" class="flex flex-col sm:flex-row gap-2 max-w-md mx-auto pt-2">
+                <input type="email" id="newsletter-email" required placeholder="Enter your email address" class="bg-brand-emerald/50 border border-brand-emerald text-white placeholder:text-slate-400 px-4 py-3 rounded-xl text-sm flex-1 focus:outline-none focus:border-brand-pink">
+                <button type="submit" class="bg-brand-pink hover:bg-brand-rose text-brand-deep font-bold px-6 py-3 rounded-xl text-xs uppercase tracking-wider transition-colors shrink-0">
+                    SUBSCRIBE
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="bg-[#0A1E18] text-slate-400 text-xs py-12 px-4 border-t border-brand-emerald/30">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+            <div class="space-y-3">
+                <div class="flex items-center gap-3">
+                    <img src="img/ChatGPT Image Sep 2, 2026, 09_40_51 PM.png" alt="Greenland Flowers Shop Logo" class="h-12 w-auto object-contain rounded-full border border-brand-pink/50">
+                    <span class="font-serif text-lg font-bold text-white tracking-wide">GREENLAND FLOWERS SHOP</span>
+                </div>
+                <p class="text-slate-400 text-xs leading-relaxed">Beautiful flowers for every special moment.</p>
+            </div>
+
+            <div class="space-y-2">
+                <p class="text-white font-semibold text-sm mb-3">Quick Navigation</p>
+                <div class="grid grid-cols-2 gap-2">
+                    <a href="#home" class="hover:text-brand-pink transition-colors">Home</a>
+                    <a href="#featured" class="hover:text-brand-pink transition-colors">Shop Flowers</a>
+                    <a href="#occasions" class="hover:text-brand-pink transition-colors">Occasions</a>
+                    <a href="#about" class="hover:text-brand-pink transition-colors">About Us</a>
+                    <a href="#gallery" class="hover:text-brand-pink transition-colors">Gallery</a>
+                    <a href="#contact" class="hover:text-brand-pink transition-colors">Contact</a>
+                </div>
+            </div>
+
+            <div class="space-y-3">
+                <p class="text-white font-semibold text-sm mb-1">Contact Info</p>
+                <p><i class="fa-solid fa-phone text-brand-pink mr-2"></i> <a href="tel:0911280448" class="hover:underline">091 128 0448</a></p>
+                <p><i class="fa-solid fa-location-dot text-brand-pink mr-2"></i> <a href="https://maps.app.goo.gl/qcGh8HZ4zBbzpujD6" target="_blank" rel="noopener noreferrer" class="hover:underline">XRQ8+J6, Addis Ababa, Ethiopia</a></p>
+                <p><i class="fa-brands fa-instagram text-brand-pink mr-2"></i> <a href="https://www.instagram.com/greenland_flowers" target="_blank" rel="noopener noreferrer" class="hover:underline">@greenland_flowers</a></p>
+            </div>
+        </div>
+
+        <div class="max-w-7xl mx-auto pt-8 border-t border-brand-emerald/20 text-center flex flex-col sm:flex-row justify-between items-center gap-4">
+            <p>© 2026 Greenland Flowers Shop. All rights reserved.</p>
+            <a href="https://www.instagram.com/greenland_flowers" target="_blank" rel="noopener noreferrer" class="w-8 h-8 rounded-full bg-brand-emerald flex items-center justify-center text-brand-pink hover:bg-brand-pink hover:text-brand-deep transition-colors">
+                <i class="fa-brands fa-instagram text-base"></i>
+            </a>
+        </div>
+    </footer>
+
+    <div id="lightbox" class="fixed inset-0 bg-black/90 z-50 hidden flex items-center justify-center p-4">
+        <button onclick="closeLightbox()" class="absolute top-6 right-6 text-white text-3xl hover:text-brand-pink transition-colors focus:outline-none">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+        <button onclick="prevLightboxImage()" class="absolute left-4 text-white text-3xl hover:text-brand-pink transition-colors focus:outline-none">
+            <i class="fa-solid fa-chevron-left"></i>
+        </button>
+        <div class="max-w-3xl max-h-[80vh] text-center">
+            <img id="lightbox-img" src=""
